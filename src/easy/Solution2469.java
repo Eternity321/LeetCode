@@ -3,7 +3,7 @@ package easy;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class    Solution2469 {
+public class Solution2469 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         double celsius = scanner.nextDouble();
