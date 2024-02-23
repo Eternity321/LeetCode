@@ -1,11 +1,8 @@
 package medium;
 
-import java.util.HashMap;
-import java.util.Scanner;
-
 public class Solution36 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 //        int n = 9;
 //        int m = 9;
 //        char[][] board = new char[n][m];
@@ -37,7 +34,9 @@ public class Solution36 {
                 if (board[i][j] != '.') {
                     int pos = board[i][j] - '0' - 1;
                     int pos_square = (i / 3) + (j / 3) * 3;
-                    if (++line[i][pos] > 1 || ++col[pos][j] > 1 || ++square[pos_square][pos] > 1) return false;
+                    if (++line[i][pos] > 1 || ++col[pos][j] > 1 || ++square[pos_square][pos] > 1){
+                        return false;
+                    }
                 }
             }
         }
